@@ -1,7 +1,12 @@
 class Solution(object):
     def mirrorDistance(self, n):
-        # Reverse the number
-        reversed_n = int(str(n)[::-1])
-        
-        # Return absolute difference
-        return abs(n - reversed_n)
+        """
+        :type n: int
+        :rtype: int
+        """
+        a=str(n)
+        k=a[::-1]
+        result = int(k)
+
+        m= abs(n-result)
+        return m
